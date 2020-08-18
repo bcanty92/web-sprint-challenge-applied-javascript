@@ -21,7 +21,13 @@
 //
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
+
+    
+
 console.log(axios.get('https://lambda-times-backend.herokuapp.com/articles'))
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then(res => Cards(res.data.articles));
+
 
 const cardContainer = document.querySelector('.cards-container')
 
