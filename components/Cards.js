@@ -59,6 +59,12 @@ function Cards(obj){
             imgContainer.appendChild(img)
             author.appendChild(authorName)
 
+            //headline 
+            let headlinecard = document.querySelector('.headline');
+    headlinecard.addEventListener('click', (event) => {
+        headlinecard.textContent = console;
+    })
+
         });
     }
     
